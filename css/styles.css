@@ -1,0 +1,111 @@
+/* user form  */
+
+#user {
+    font-family: arial;
+}
+
+#user label {
+    font-size: 13px;
+    display: block;
+    margin: 10px;
+}
+
+input {
+    font-size: 13px;
+}
+
+button#start,
+#restart,
+#new-game {
+    border: 1px solid #cce;
+    background: #eee;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+/* game board */
+
+#game-board {
+    display: none;
+
+    font-family: arial;
+}
+
+#p1-info,
+#p2-info {
+    font-size: 14px;
+    padding: 5px;
+    text-transform: uppercase;
+    line-height: 14px;
+    margin: 5px;
+}
+
+#p1-info i,
+#p2-info i {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.red {
+    background: #f00;
+}
+
+.blue {
+    background: #00f;
+}
+
+.tile.red::after {
+    content: ' X';
+    color: #fff;
+    font-size: 36px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.tile.blue::after {
+    content: 'O';
+    color: #fff;
+    font-size: 36px;
+    line-height: 50px;
+    margin-left: 10px;
+
+}
+
+#matrix {
+    width: 152px;
+    height: 152px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+#matrix .tile {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: inline-block;
+    float: left;
+}
+
+#result {
+    display: inline-block;
+    background: #9fe;
+    animation: blinkingText 0.8s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #000;
+    }
+
+    99% {
+        color: transparent;
+    }
+
+    100% {
+        color: #000;
+    }
+}

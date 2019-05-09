@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe - v2</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/main.js" async></script>
+</head>
+
+<body>
+    <div id="user">
+        <label for="player-one-name">Player One
+            <input type="text" id="player-one-name" placeholder="Enter Full Name">
+        </label>
+        <label for="player-two-name">
+            Player Two
+            <input type="text" id="player-two-name" placeholder="Enter Full Name">
+        </label>
+        <button id="start">Start</button>
+    </div>
+    <div id="game-board">
+        <div id="p1-info"><i class="red"></i><span></span></div>
+        <div id="p2-info"><i class="blue"></i><span></span></div>
+        <div id="matrix">
+            <span class="tile" tile-index="0"></span>
+            <span class="tile" tile-index="1"></span>
+            <span class="tile" tile-index="2"></span>
+            <span class="tile" tile-index="3"></span>
+            <span class="tile" tile-index="4"></span>
+            <span class="tile" tile-index="5"></span>
+            <span class="tile" tile-index="6"></span>
+            <span class="tile" tile-index="7"></span>
+            <span class="tile" tile-index="8"></span>
+        </div>
+        <button id="new-game">New Game</button>
+        <button id="restart">Restart</button>
+        <div id="result">
+
+        </div>
+    </div>
+</body>
+
+</html>
